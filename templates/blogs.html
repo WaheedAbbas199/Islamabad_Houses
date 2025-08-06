@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HPP</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="{{url_for('static', filename='img/favicon.png')}}" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="{{url_for('static', filename='lib/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="{{url_for('static', filename='lib/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename='lib/animate/animate.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename='lib/ionicons/css/ionicons.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename='lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="{{url_for('static', filename='css/style.css')}}" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <!--/ Nav Star /-->
+  <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
+    <div class="container">
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <a class="navbar-brand text-brand" href="{{url_for('index')}}">H<span class="color-b">PP</span></a>
+      <button type="button" class="btn btn-link nav-search navbar-toggle-box-collapse d-md-none" data-toggle="collapse"
+        data-target="#navbarTogglerDemo01" aria-expanded="false">
+      </button>
+      
+      <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="{{url_for('index')}}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{url_for('blogs')}}">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{url_for('pridicted')}}">Predict</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{url_for('Converter')}}">Converter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{url_for('about')}}">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{url_for('contact')}}">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/ Nav End /-->
+
+  <!--/ Intro Single star /-->
+  <section class="intro-single">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-lg-8">
+          <div class="title-single-box">
+            <h1 class="title-single">Top 15 Locations </h1>
+            <span class="color-text-a">Islamabad</span>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-4">
+          <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="{{url_for('index')}}">Home</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Blog
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Intro Single End /-->
+
+  <!--/ News Grid Star /-->
+  <section class="news-grid grid">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card-box-b card-shadow news-box">
+            <div class="img-box">
+              <img src="{{ url_for('static', filename='img/DHA.jpg') }}" alt="" class="img-b img-fluid">
+            </div>
+            <div class="card-overlay">
+              <div class="card-header-b">
+                <div class="card-category-b">
+                  <a class="category-b" href="https://www.usa.gov/agencies/defense-health-agency" href="{{url_for('index')}}">Read More...</a>
+                </div>
+                <div class="card-title-b">
+                  <h2 class="title-2">
+                    <a href="blog-single.html">Defense Health
+                      <br> Agency(DHA)</a>
+                  </h2>
+                </div>
+                <div class="card-date">
+                  <span class="date-b">Loaction_ID : 3226</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-box-b card-shadow news-box">
+            <div class="img-box">
+              <img src="{{ url_for('static', filename='img/Bahria Town.jpg') }}"  alt="" class="img-b img-fluid">
+            </div>
+            <div class="card-overlay">
+              <div class="card-header-b">
+                <div class="card-category-b">
+                  <a class="category-b" href="https://bahriatown.pk/islamabad/">Read More...</a>
+                </div>
+                <div class="card-title-b">
+                  <h2 class="title-2">
+                    <a href="blog-single.html">Bahria
+                      <br> Town(BT)</a>
+                  </h2>
+                </div>
+                <div class="card-date">
+                  <span class="date-b">Loaction_ID : 383</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-box-b card-shadow news-box">
+            <div class="img-box">
+              <img src="{{ url_for('static', filename='img/G-13.jpg') }}" alt="" class="img-b img-fluid">
+            </div>
+            <div class="card-overlay">
+              <div class="card-header-b">
+                <div class="card-category-b">
+                  <a class="category-b" href="https://www.graana.com/area/221/g-13/">Read More...</a>
+                </div>
+                <div class="card-title-b">
+                  <h2 class="title-2">
+                    <a href="blog-single.html">G-13
+                      <br> Islamabad</a>
+                  </h2>
+                </div>
+                <div class="card-date">
+                  <span class="date-b">Loaction_ID : 3337</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-box-b card-shadow news-box">
+            <div class="img-box">
+              <img src="{{ url_for('static', filename='img/G-15.jpg') }}" alt="" class="img-b img-fluid">
+            </div>
+            <div class="card-overlay">
+              <div class="card-header-b">
+                <div class="card-category-b">
+                  <a class="category-b" href="https://www.graana.com/blog/a-guide-to-g-15-markaz/">Read More...</a>
+                </div>
+                <div class="card-title-b">
+                  <h2 class="title-2">
+                    <a href="blog-single.html">G-15
+                      <br> Islamabad</a>
+                  </h2>
+                </div>
+                <div class="card-date">
+                  <span class="date-b">Loaction_ID : 764</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-box-b card-shadow news-box">
+            <div class="img-box">
+              <img src="{{ url_for('static', filename='img/Bani-Gala.jpg') }}" alt="" class="img-b img-fluid">
+            </div>
+            <div class="card-overlay">
+              <div class="card-header-b">
+                <div class="card-category-b">
+                  <a class="category-b" href="https://www.graana.com/blog/an-area-guide-to-bani-gala-islamabad/">Read More...</a>
+                </div>
+                <div class="card-title-b">
+                  <h2 class="title-2">
+                    <a href="blog-single.html">Bani-Gala
+                      <br> Islamabad</a>
+                  </h2>
+                </div>
+                <div class="card-date">
+                  <span class="date-b">Loaction_ID : 340</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-box-b card-shadow news-box">
+            <div class="img-box">
+              <img src="{{ url_for('static', filename='img/Soan Garden.jpg') }}" alt="" class="img-b img-fluid">
+            </div>
+            <div class="card-overlay">
+              <div class="card-header-b">
+                <div class="card-category-b">
+                  <a class="category-b" href="https://medium.com/@graanaportal/soan-garden-islamabad-a-tranquil-suburban-oasis-31b768addae5">Read More...</a>
+                </div>
+                <div class="card-title-b">
+                  <h2 class="title-2">
+                    <a href="blog-single.html">Soan Garden
+                      <br> Islamabad</a>
+                  </h2>
+                </div>
+                <div class="card-date">
+                  <span class="date-b">Loaction_ID : 338</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-box-b card-shadow news-box">
+            <div class="img-box">
+              <img src="{{ url_for('static', filename='img/Ghauri-Town.jpg') }}" alt="" class="img-b img-fluid">
+            </div>
+            <div class="card-overlay">
+              <div class="card-header-b">
+                <div class="card-category-b">
+                  <a class="category-b" href="https://visualpakistan.com/ghauri-town-islamabad/">Read More...</a>
+                </div>
+                <div class="card-title-b">
+                  <h2 class="title-2">
+                    <a href="blog-single.html">Ghauri Town
+                      <br> Islamabad</a>
+                  </h2>
+                </div>
+                <div class="card-date">
+                  <span class="date-b">Loaction_ID : 3396</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-box-b card-shadow news-box">
+            <div class="img-box">
+              <img src="{{ url_for('static', filename='img/Faisal Town (F-18).jpg') }}" alt="" class="img-b img-fluid">
+            </div>
+            <div class="card-overlay">
+              <div class="card-header-b">
+                <div class="card-category-b">
+                  <a class="category-b" href="https://www.graana.com/area/268/faisal_town,_f-18__/">Read More...</a>
+                </div>
+                <div class="card-title-b">
+                  <h2 class="title-2">
+                    <a href="blog-single.html">Faisal Town
+                      <br> (F-18)</a>
+                  </h2>
+                </div>
+                <div class="card-date">
+                  <span class="date-b">Loaction_ID : 3096</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-box-b card-shadow news-box">
+            <div class="img-box">
+              <img src="{{ url_for('static', filename='img/Gulberg-Islamabad.jpg') }}" alt="" class="img-b img-fluid">
+            </div>
+            <div class="card-overlay">
+              <div class="card-header-b">
+                <div class="card-category-b">
+                  <a class="category-b" href="https://www.graana.com/blog/all-you-need-to-know-about-gulberg-islamabad/">Read More...</a>
+                </div>
+                <div class="card-title-b">
+                  <h2 class="title-2">
+                    <a href="blog-single.html">Gulberg
+                      <br> Islamabad</a>
+                  </h2>
+                </div>
+                <div class="card-date">
+                  <span class="date-b">Loaction_ID : 306</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-box-b card-shadow news-box">
+            <div class="img-box">
+              <img src="{{ url_for('static', filename='img/F_6_Islamabad.jpg') }}" alt="" class="img-b img-fluid">
+            </div>
+            <div class="card-overlay">
+              <div class="card-header-b">
+                <div class="card-category-b">
+                  <a class="category-b" href="https://www.graana.com/area/130/F-6~1/">Read More...</a>
+                </div>
+                <div class="card-title-b">
+                  <h2 class="title-2">
+                    <a href="blog-single.html">F_6
+                      <br> Islamabad</a>
+                  </h2>
+                </div>
+                <div class="card-date">
+                  <span class="date-b">Loaction_ID : 3301</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-box-b card-shadow news-box">
+            <div class="img-box">
+              <img src="{{ url_for('static', filename='img/E-11.jpg') }}" alt="" class="img-b img-fluid">
+            </div>
+            <div class="card-overlay">
+              <div class="card-header-b">
+                <div class="card-category-b">
+                  <a class="category-b" href="https://www.graana.com/blog/an-area-guide-to-e-11-islamabad/#:~:text=The%20E11%20sector%20is%20divided%20into%204%20sub-sectors%2C,fruit%20and%20vegetable%20shops%2C%20beauty%20salons%2C%20and%20mosques.">Read More...</a>
+                </div>
+                <div class="card-title-b">
+                  <h2 class="title-2">
+                    <a href="blog-single.html">E-11
+                      <br> Islamabad</a>
+                  </h2>
+                </div>
+                <div class="card-date">
+                  <span class="date-b">Loaction_ID : 329</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-box-b card-shadow news-box">
+            <div class="img-box">
+              <img src="{{ url_for('static', filename='img/Chak Shahzad.jpg') }}" alt="" class="img-b img-fluid">
+            </div>
+            <div class="card-overlay">
+              <div class="card-header-b">
+                <div class="card-category-b">
+                  <a class="category-b" href="https://www.graana.com/blog/exploring-chak-shahzad-a-modern-suburb-in-ict/">Read More...</a>
+                </div>
+                <div class="card-title-b">
+                  <h2 class="title-2">
+                    <a href="blog-single.html">Chak Shahzad
+                      <br> Islamabad</a>
+                  </h2>
+                </div>
+                <div class="card-date">
+                  <span class="date-b">Loaction_ID : 1005</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-box-b card-shadow news-box">
+            <div class="img-box">
+              <img src="{{ url_for('static', filename='img/Emaar Canyon Views.jpg') }}" alt="" class="img-b img-fluid">
+            </div>
+            <div class="card-overlay">
+              <div class="card-header-b">
+                <div class="card-category-b">
+                  <a class="category-b" href="https://pk.emaar.com/en/our-communities/emaar-canyon-views/">Read More...</a>
+                </div>
+                <div class="card-title-b">
+                  <h2 class="title-2">
+                    <a href="blog-single.html">Emaar Canyon
+                      <br> Views</a>
+                  </h2>
+                </div>
+                <div class="card-date">
+                  <span class="date-b">Loaction_ID : 707</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-box-b card-shadow news-box">
+            <div class="img-box">
+              <img src="{{ url_for('static', filename='img/PWD Housing Scheme.jpg') }}" alt="" class="img-b img-fluid">
+            </div>
+            <div class="card-overlay">
+              <div class="card-header-b">
+                <div class="card-category-b">
+                  <a class="category-b" href="https://www.zameen.com/area-guides/islamabad/pwd-housing-scheme-424/">Read More...</a>
+                </div>
+                <div class="card-title-b">
+                  <h2 class="title-2">
+                    <a href="blog-single.html">PWD Housing
+                      <br> Scheme</a>
+                  </h2>
+                </div>
+                <div class="card-date">
+                  <span class="date-b">Loaction_ID : 8495</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-box-b card-shadow news-box">
+            <div class="img-box">
+              <img src="{{ url_for('static', filename='img/f10.jpg') }}" alt="" class="img-b img-fluid">
+            </div>
+            <div class="card-overlay">
+              <div class="card-header-b">
+                <div class="card-category-b">
+                  <a class="category-b" href="https://www.graana.com/blog/f10-islamabad-location-prices/">Read More...</a>
+                </div>
+                <div class="card-title-b">
+                  <h2 class="title-2">
+                    <a href="blog-single.html">F-10
+                      <br> Islamabad</a>
+                  </h2>
+                </div>
+                <div class="card-date">
+                  <span class="date-b">Loaction_ID : 3278</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+  <!--/ News Grid End /-->
+
+  <!--/ footer Star /-->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="copyright-footer">
+            <p class="copyright color-text-a">
+              &copy; Copyright
+              <span class="color-a">House Price Pridiction</span> All Rights Reserved.
+            </p>
+          </div>
+          <div class="credits">
+
+            Designed by HPP</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--/ Footer End /-->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
+
+  <!-- JavaScript Libraries -->
+  <script src="{{url_for('static', filename='lib/jquery/jquery.min.js')}}"></script>
+  <script src="{{url_for('static', filename='lib/jquery/jquery-migrate.min.js')}}"></script>
+  <script src="{{url_for('static', filename='lib/popper/popper.min.js')}}"></script>
+  <script src="{{url_for('static', filename='lib/bootstrap/js/bootstrap.min.js')}}"></script>
+  <script src="{{url_for('static', filename='lib/easing/easing.min.js')}}"></script>
+  <script src="{{url_for('static', filename='lib/owlcarousel/owl.carousel.min.js')}}"></script>
+  <script src="{{url_for('static', filename='lib/scrollreveal/scrollreveal.min.js')}}"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="{{url_for('static', filename='contactform/contactform.js')}}"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="{{url_for('static', filename='js/main.js')}}"></script>
+
+</body>
+</html>
